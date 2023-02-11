@@ -1,0 +1,15 @@
+.container{
+    margin: auto;
+}
+fieldset{
+    border: 1px black solid;
+    margin: 50px;
+}
+.field{
+    border: 1px black solid;
+    margin: 50px;
+}
+.slidecontainer{
+    margin: 30px;
+    padding: 20px;
+}

@@ -10,23 +10,25 @@
   </head>
   <body>
     <main>
-      <header>Death and the maiden</header>
+      <header><h1>Űrlap</h1></header>
       <nav>
         <ul>
-          <li><a href="urlap.html">Űrlap</a></li>
           <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="urlap.html">Űrlap</a></li>
           <li><a href="kepregeny.html">Képregény</a></li>
         </ul>
       </nav>
-        <article class="container">
+        <article class="container2">
+          <fieldset class="field">
             <form action="/action_page.php">
-                <label for="fname">First name:</label><br>
+                <label for="fname">Vezetéknév:</label><br>
                 <input type="text" id="fname" name="Szabó" ><br>
-                <label for="lname">Last name:</label><br>
+                <label for="lname">Keresztnév:</label><br>
                 <input type="text" id="lname" name="Zsolt"><br><br>
                 <input type="submit" value="Submit">
               </form> 
-              
+            </fieldset>
+          <fieldset>
               <form>
                 <h3>Melyik tetszett jobban?:</h3>
                   <input type="radio" id="html" name="fav_language" value="első">
@@ -34,6 +36,22 @@
                   <input type="radio" id="css" name="fav_language" value="Második">
                   <label for="css">Második</label><br>
             </form>
+          </fieldset>
+            <div class="slidecontainer">
+              <legend>Elégedettség:</legend>
+              <input class="csuszka" type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+              <h5>Érték <span id="demo"></span></h5>
+              <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+                <input type="submit" value="Küldés" />
+            </div>
         </article>
       <footer>&copy;Berta Zoé Anna</footer>
     </main>
