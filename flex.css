@@ -9,6 +9,18 @@ fieldset{
     border: 1px black solid;
     margin: 50px;
 }
+input{
+    margin: 10px;
+    border-radius: 5px;
+}
+.kuldes{
+
+    padding: 8px;
+    background-color: coral;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .slidecontainer{
     margin: 30px;
     padding: 20px;

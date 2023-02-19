@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berta Zoé Anna</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flex.css" />
   </head>
   <body>
     <main>
@@ -18,41 +18,27 @@
           <li><a href="kepregeny.html">Képregény</a></li>
         </ul>
       </nav>
-        <article class="container2">
+      <article class="container2">
+        <form action="">
           <fieldset class="field">
-            <form action="/action_page.php">
-                <label for="fname">Vezetéknév:</label><br>
-                <input type="text" id="fname" name="Szabó" ><br>
-                <label for="lname">Keresztnév:</label><br>
-                <input type="text" id="lname" name="Zsolt"><br><br>
-                <input type="submit" value="Submit">
-              </form> 
-            </fieldset>
-          <fieldset>
-              <form>
-                <h3>Melyik tetszett jobban?:</h3>
-                  <input type="radio" id="html" name="fav_language" value="első">
-                  <label for="html">Első</label><br>
-                  <input type="radio" id="css" name="fav_language" value="Második">
-                  <label for="css">Második</label><br>
-            </form>
+            <label for="fname">Vezetéknév:</label>
+            <input type="text" id="fname" name="Szabó" /><br />
+            <label for="lname">Keresztnév:</label>
+            <input type="text" id="lname" name="Zsolt" /><br /><br />
           </fieldset>
-            <div class="slidecontainer">
-              <legend>Elégedettség:</legend>
-              <input class="csuszka" type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
-              <h5>Érték <span id="demo"></span></h5>
-              <script>
-                var slider = document.getElementById("myRange");
-                var output = document.getElementById("demo");
-                output.innerHTML = slider.value;
-                
-                slider.oninput = function() {
-                  output.innerHTML = this.value;
-                }
-                </script>
-                <input type="submit" value="Küldés" />
-            </div>
-        </article>
+          <fieldset>
+            <h3>Melyik tetszett jobban?:</h3>
+             
+            <input type="radio" id="html" name="fav_language" value="első" />  
+            <label for="html">Első</label><br />
+             
+            <input type="radio" id="css" name="fav_language" value="Második" />
+              <label for="css">Második</label><br />
+          </fieldset>
+          <input class="kuldes" type="submit" value="Küldés" />
+          </div>
+        </form>
+      </article>
       <footer>&copy;Berta Zoé Anna</footer>
     </main>
   </body>
